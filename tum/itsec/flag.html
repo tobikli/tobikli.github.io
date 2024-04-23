@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flag</title>
+</head>
+<body>
+
+<p id="output"></p>
+
+<script>
+function generateString() {
+    const genRanHex = Array.from({ length: 42 }, () => "0123456789abcdef".charAt(Math.floor(Math.random() * 16))).join('');
+    return "flag{"+ genRanHex +"}";
+}
+// IMPORTANT: https://bitly.com/98K8eH
+document.getElementById("output").innerText = generateString();
+</script>
+
+</body>
+</html>

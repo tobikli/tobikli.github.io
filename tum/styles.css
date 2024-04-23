@@ -15,6 +15,13 @@ h1 {
     color: #333;
 }
 
+h2 {
+  font-size: 2;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  color: #333;
+}
+
 button {
     position: relative;
     padding: 10px 20px;
@@ -89,3 +96,19 @@ button {
     transition: box-shadow 0.2s ease-in;
   }
   
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
